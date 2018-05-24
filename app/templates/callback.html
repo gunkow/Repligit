@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Callback</title>
+    <h2>
+            Your request is {% if status_code == 202 %}
+                accepted
+            {% else %}
+            not accepted
+            {% endif %}
+        Status code: {{ status_code }}
+
+    </h2>
+    {% if status_code == 202 %}
+        <h3>
+            Repligit forking happens asynchronously.
+            Therefore, you may have to wait a short period before accessing the git objects.
+            If this takes longer than 5 minutes, be sure to contact GitHub support.
+        </h3>
+    {% endif %}
+</head>
+<body>
+        {{ r.r.r }}
+
+</body>
+</html>
