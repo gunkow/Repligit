@@ -10,9 +10,9 @@ And you should provide GitHub with your Repligit's **callback path** .
 Then go repo's root and run in your shell the following:
 ```
  export FLASK_APP="repligit.py"
- export SECRET= **your secret_id**
- export CLIENT_ID= **your client_id**
- export CALLBACK= **callback**
+ export SECRET= secret_id
+ export CLIENT_ID=  client_id
+ export CALLBACK= callback
  flask run --host="0.0.0.0"
 ```
 The Repligit's workflow is:
