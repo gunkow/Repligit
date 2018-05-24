@@ -17,7 +17,7 @@ def callback():
                'accept': 'json'}
     r = requests.post('https://github.com/login/oauth/access_token', data=payload, headers={'Accept': 'application/json'})
     token = r.json()['access_token']
-    r = requests.post("https://api.github.com/repos/gunkow/test_library/forks",
+    r = requests.post("https://api.github.com/repos/gunkow/Repligit/forks",
                      headers={"Authorization": "token %s" % token,
                               'Accept': 'application/json'})
     status_code = r.status_code
